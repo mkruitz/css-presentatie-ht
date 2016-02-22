@@ -1,0 +1,118 @@
+fieldset {
+/*	display: none; */
+}
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, input {
+	font-size: 24px;
+	font-family: "Lato" Helvetica, Arial, sans-serif;
+}
+
+body {
+	background-color: #648880;
+}
+
+h1 {
+	line-height: 10vh;
+	font-size: 7vh;
+	text-transform: capitalize;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.99);
+	font-weight: 100;
+	text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.99);
+}
+
+.container {
+	position: absolute;
+	top   : 50vh;
+	left  : 50vw; /* 50% */
+}
+
+@media screen and (orientation: landscape) {
+	.container {
+		width : 80vh;
+		height: 80vh;
+		margin-top : -40vh;
+		margin-left: -40vh;
+	}
+}
+@media screen and (orientation: portrait) {
+	.container {
+		width : 80vw; /* 80% */
+		height: 80vw; /* 80% */
+		margin-top : -40vw; /* -40% */
+		margin-left: -40vw; /* -40% */
+	}
+}
+
+.cell {
+	display: inline-block;
+	background-color: white;
+	width : 33.33333333%;
+	height: 33.33333333%;
+	border: 3px solid black;
+}
+
+.top-left          { border-top-left-radius    : 10%; }
+.top-right        { border-top-right-radius   : 10%; }
+.bottom-right  { border-bottom-right-radius: 10%; }
+.bottom-left    { border-bottom-left-radius : 10%; }
+
+
+.cell:not(.nohover):hover {
+	background-image: url('../circle-white.png');
+	background-color: red;
+}
+
+.hover-cross .cell:not(.nohover):hover {
+	background-image: url('../cross-white.png');
+}
+
+.tic, .tac , .cell:not(.nohover):hover{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 90%;
+}
+
+.tic {
+	background-image: url('../cross-white.png');
+	background-color: #39B54A;
+}
+
+.tac {
+	background-image: url('../circle-white.png');
+	background-color: #1C75BC;
+}
+
+#debug-info {
+	width: 30%;
+}
+
+#debug-info label {
+	display: inline-block;
+	width: 30%;
+}
+
+#debug-info input {
+	width: 70%;
+}
+
+#debug-info {
+	display: none;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+/** Styling **/
+body { text-align: center; font-size: 50px; font-family: Corbel; background-color: #282828; color: white; }
+
+.heart {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	background-color: red;
+	position: relative;
+	margin: 0 1rem;
+	border-radius: 2px;
+}
+
+/** Working parts **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.heart {
+	transform: rotate(45deg);
+}
+
+.heart::before, .heart::after {
+	position: absolute;
+	content: '';
+	background-color: inherit;
+	width: 1em;
+	height: 1em;
+	border-radius: 50%;
+}
+
+.heart::before {
+	top: -.5em;
+	left: 0;
+}
+
+.heart::after {
+	right: .5em;
+}
+
+.heart-bounce {
+	animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+	0%   { transform: rotate(45deg) scale(1); }
+	50%  { transform: rotate(45deg) scale(1.5); }
+	100% { transform: rotate(45deg) scale(1); }
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HT - CSS  Presentation in style</title>
+	<link href="css/slidedeck.css" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="css/debug.css" rel="stylesheet" type="text/css">
+</head>
+<body class="slide-background">
+<input type="radio" name="slides" class="slide-selector" checked autofocus />
+<input type="radio" name="slides" class="slide-selector" />
+<input type="radio" name="slides" class="slide-selector" />
+<input type="radio" name="slides" class="slide-selector" />
+<input type="radio" name="slides" class="slide-selector" />
+<input type="radio" name="slides" class="slide-selector" />
+<input type="radio" name="slides" class="slide-selector" />
+<input type="radio" name="slides" class="slide-selector" />
+<input type="radio" name="slides" class="slide-selector" />
+<input type="radio" name="slides" class="slide-selector" />
+<input type="radio" name="slides" class="slide-selector" />
+<input type="radio" name="slides" class="slide-selector" />
+
+<!-- front page -->
+<section class="slide" id="slide-1">
+<h1>Presentation in Style</h1>
+<article class="instruction">
+Gebruik de pijltjes toetsen om naar de volgende slide te gaan.<br/>
+Lukt dit niet, klik dan op de presentatie en druk 1x op [TAB] en probeer nogmaals.</article>
+</section><!--
+	HTML5 
+--><section class="slide">
+<h3>HTML5 - Kapstok</h3>
+<article>
+<p>
+<img class="container-center" src="./assets/HTML5_logo_and_wordmark.svg" width="200" />
+the logo by W3C:<br/>"represents HTML5, the cornerstone for modern Web applications".
+</p>
+<br />
+<ul class="small list-inline">
+	<li>HTML 5.x</li>
+	<li>javascript</li>
+	<li>CSS "3"</li>
+	<li>SVG</li>
+	<li>etc.</li>
+</ul>
+</article>
+</section><!--
+--><section class="slide">
+<h3>HTML5 - de grote drie</h3>
+<article>
+<div class="container-center">
+	<div class="img-line img-right img-structure"><span>Structure</span>HTML 5.x</div>
+	<div class="img-line img-right img-style"><span>Style</span>CSS "3"</div>
+	<div class="img-line img-right img-behaviour"><span>Behaviour</span>javascript</div>
+</div>
+</article>
+</section><!--
+--><section class="slide">
+<h3 class="img-right img-structure">HTML 5.x - Structure</h3>
+<article>
+<ul>
+	<li><code>&lt;!DOCTYPE html&gt;</code></li>
+	<li>Nieuwe elementen
+		<ul>
+			<li>main, section, article, header, nav, aside</li>
+		</ul>
+	</li>
+	<li>Nieuwe input types
+		<ul>
+			<li><label id="new-type-range">range</label><input type="range" id="new-input-type-range" class="demo-input" tabindex="-1" /></li>
+			<li><label id="new-type-color">color</label><input type="color" id="new-input-type-color" class="demo-input" tabindex="-1" /></li>
+			<li>...</li>
+		</ul>
+	</li>
+	<li>Opruimen van oude "zooi"
+		<ul>
+			<!-- big, strike, etc. zijn allemaal elementen die de weergave regelen, hier hebben we tegenwoordig CSS voor -->
+			<li>big, strike, tt, font, center</li>
+			<!-- frameset en frame waren ook voor het regelen van weergave hiermee kon "een gedeelte vastgetzet worden", tegenwoordig kan CSS dit en nog veel meer -->
+			<li>frameset, frame</li>
+			<!--  -->
+			<li>applet</li>
+		</ul>
+	</li>
+</ul>
+</article>
+</section><!--
+--><section class="slide">
+<h3 class="img-right img-style">CSS "3" - Style</h3>
+<article>
+<ul>
+	<li>CSS, Cascading Style Sheet</li>
+	<li><a href="https://www.w3.org/TR/#tr_CSS" target="_blank" tabindex="-1">https://www.w3.org/TR/#tr_CSS</a></li>
+	<li>CSS 2.1, modulair opgebouwd.
+		<ul class="small">
+			<li>multiple backgrounds</li>
+			<li>box model</li>
+			<li>generating content</li>
+			<li>fonts</li>
+			<li>mediaqueries</li>
+			<li>multi columns</li>
+			<li>advanced selectors</li>
+			<li>advanced borders</li>
+			<li>etc.</li>
+		</ul>
+	</li>
+</ul>
+</article>
+</section><!--
+--><section class="slide">
+<h3 class="img-right img-style">CSS - Parts</h3>
+<article style="text-align: center;">
+<p>
+<code><span class="css-selector">selector</span> <span class="group-text" title="declaration">{ <span class="css-property">property</span>: <span class="css-value">value</span>; }</span></code><br/>
+Dit samen heet een <span class="css-rule">CSS Rule</span>.
+</p>
+<p>
+<br/>
+<code class="small" style="text-align: left;">
+<span class="css-selector">img</span> { <span class="css-property">border</span>: <span class="css-value">solid 1px green</span>; }<br/>
+<span class="css-selector">h1</span> { <span class="css-property">font-family</span>: <span class="css-value">Arial</span>; }<br/>
+<span class="css-selector">a</span> { <span class="css-property">color</span>: <span class="css-value">green</span>; }<br/>
+</code>
+</p>
+</article>
+</section><!--
+--><section class="slide">
+<h3 class="img-right img-style">CSS - Selectors</h3>
+<article>
+<ul>
+	<li>State
+	<ul class="small"><li>:hover &emsp; :checked</li></ul>
+	</li>
+	<li>Functies
+	<ul class="small"><li>:nth-child( ) &emsp; :last-type-of( ) &emsp; :not( )</li></ul>
+	</li>
+	<li>Attribute
+	<ul class="small"><li>ELM[foo] &emsp; ELM[foo="bar"]</li></ul>
+	</li>
+	<li>Combinatie
+	<ul class="small"><li>> &emsp; + &emsp; ~</li></ul>
+	</li>
+	<li><a href="https://www.w3.org/TR/css3-selectors/#selectors" target="_blank" tabindex="-1">https://www.w3.org/TR/css3-selectors/#selectors</a></li>
+</ul>
+<br />
+<p>
+	<a href="../demo-selectors/index.html" class="demo" target="_blank" tabindex="-1">DEMO</a>
+</p>
+</article>
+</section><!--
+--><section class="slide">
+<h3 class="img-right img-style">CSS - Generating Content</h3>
+<article>
+<ul>
+	<li>pseudo elementen, ::before / ::after</li>
+	<li>counter()</li>
+	<li>attr()</li>
+</ul>
+<p>
+<br />
+<a href="../demo-content-generation/index.html" class="demo" target="_blank" tabindex="-1">DEMO</a>
+</p>
+</article>
+</section><!--
+--><section class="slide">
+<h3 class="img-right img-style">CSS - Transform and Animate</h3>
+<article>
+<ul>
+	<li>Transformations
+		<ul class="small">
+			<li>translate</li>
+			<li>rotate</li>
+			<li>2D and 3D</li>
+		</ul>
+	</li>
+	<li>Animations
+		<ul class="small">
+			<li>zo goed als alle properties</li>
+			<li>step, ininite</li>
+		</ul>
+	</li>
+</ul>
+<p><a href="../demo-transform-and-animate/index.html" class="demo" target="_blank" tabindex="-1">DEMO</a></p>
+<p><a href="https://rupl.github.io/unfold/" target="_blank" tabindex="-1">Unfold</a></p>
+<p><a href="http://www.keithclark.co.uk/labs/css-fps/nojs/" target="_blank" tabindex="-1">pure CSS 3D environment</a></p>
+</article>
+</section><!--
+--><section class="slide">
+<h3>CSS...</h3>
+<article>
+<ul>
+	<li>CSS concepten
+		<ul class="small">
+			<li>Fonts</li>
+			<li>Shorthand properties</li>
+			<li>Specificy</li>
+			<li>Box model</li>
+		</ul>
+	</li>
+	<li>Mobile first development</li>
+	<li>Browser compatibility / CSS Reset</li>
+	<li>Responsive design / MediaQueries</li>
+</ul>
+</article>
+</section><!--
+- -><section class="slide">
+<h3 class="header-with-img img-behaviour">javascript</h3>
+<article>
+<!- - Zie presentatie Rene. - ->
+	<img class="container-center" src="assets\js-presentatie.png" alt="Javascript presentatie, door Rene" width="480" />
+</article>
+</section><!- -
+--><section class="slide">
+<h3>That's it</h3>
+<article>
+</article>
+</section><!--
+--><section class="slide">
+<h3>Links / Referenties</h3>
+<article>
+<p>HTML 5</p>
+<ul>
+	<li class="small">https://en.wikipedia.org/wiki/HTML5</li>
+</ul>
+<p>CSS</p>
+<ul>
+	<li class="small">https://en.wikipedia.org/wiki/Cascading_Style_Sheets</li>
+	<li class="small">https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories</li>
+	<li class="small">https://css-tricks.com/</li>
+	<li class="small">http://bennettfeely.com/gradients/</li>
+	<li class="small">https://www.w3.org/TR/css3-selectors/#selectors</li>
+</ul>
+<p>Boeken</p>
+<ul>
+	<li class="small">http://learn.shayhowe.com/</li>
+	<li class="small">http://shop.oreilly.com/product/0636920031123.do</li>
+</ul>
+<p>Overige</p>
+<ul>
+	<li class="small">http://www.slideshare.net/shawncalvert/html-csspresentation</li>
+	<li class="small">https://rupl.github.io/unfold/</li>
+	<li class="small">http://www.keithclark.co.uk/labs/css-fps/nojs/</li>
+	<li class="small">http://devdocs.io/</li>
+	<li class="small">http://clrs.cc/</li>
+	<li class="small">https://validator.w3.org/nu/#textarea</li>
+</ul>
+</article>
+</section>
+</body>
+</html>

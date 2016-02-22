@@ -1,0 +1,140 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-size: 24px; /* size 24 */
+	font-family: Corbel;
+}
+
+.slide {
+	box-sizing: border-box;
+	padding: 1.67em 1em 1em 3em;
+}
+
+.slide-background {
+	background: linear-gradient(180deg, #000000, #000000 67%, #5A77A8);
+}
+
+.slide, .slide-background {
+	height: 100vh;
+	width: 100vw;
+}
+
+h1, h3 {
+	color: rgb(193, 238, 255); /* #C1EEFF; */
+	font-size: 1.67em; /* size ongeveer 40px */
+	font-family: Consolas;
+	padding: 1em 0;
+}
+
+h1 {
+	background: rgba(90, 119, 168, 0.4);
+	margin-left:-1em;
+	padding-left: 1em;
+}
+
+article {
+	float: left;
+	width: 80vw;
+}
+
+li {
+	list-style-type: none;
+	background: url("../assets/bullet.png") 0% 0.45em no-repeat;
+	background-size: 0.6em;
+	padding-left: 1em;
+}
+
+div.img-right {
+	margin: .5em 0;
+	height: 146px; 
+	line-height: 1.5em;
+	padding: 0 220px 0 1em;
+}
+
+.img-right {
+	background: url('') no-repeat right;
+}
+
+.img-line span {
+	display: block;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.img-behaviour { background-image: url('../assets/behaviour.png'); }
+.img-structure { background-image: url('../assets/structure.png'); }
+.img-style        { background-image: url('../assets/style.png'); }
+
+.container-center {
+/*	width: 480px;*/
+	display: block;
+	margin: 0 auto;
+}
+
+.small {
+	font-size: .7em;
+}
+
+.list-inline > li {
+	display: inline-block;
+}
+
+.demo-input {
+	margin-left: 1em;
+}
+
+.group-text {
+	display: inline-block;
+	margin-bottom: 3em;
+	position: relative;
+}
+
+.group-text::before, .group-text::after {
+	content: '';
+	position: absolute;
+	display: block;
+	left: 0.8em;
+	right: 0.8em;
+}
+
+
+.group-text::before {
+	border: 2px dashed #7FDBFF;
+	border-top: none;
+	top: 1.3em;
+	height: 1em;
+	border-radius: 0 0 0.1em 0.1em;
+}
+
+.group-text::after {
+	content: attr(title);
+	display: block;
+	top: 2.5em;
+	color: #7FDBFF;
+}
+
+.css-property      { color: #FF851B; }
+.css-value           { color: #795548; }
+.css-rule             { color: #FF4136;}
+.css-declaration { color: #7FDBFF;}
+.css-selector      { color: #2ECC40;}
+
+.instruction {
+	position: absolute;
+	left: 20%;
+	bottom: 10%;
+	width: auto;
+	padding: 1em;
+
+	border: 1px dashed white;
+	border-radius: .2em;
+	background: rgba(255, 255, 255, .3);
+	box-shadow: 0 0 0 .4em rgba(255, 255, 255, .3);
+}
+
+
+
+
+
+

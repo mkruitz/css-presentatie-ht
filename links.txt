@@ -1,0 +1,21 @@
+Interessante links
+== HTML 5
+- https://en.wikipedia.org/wiki/HTML5
+
+== CSS
+- https://en.wikipedia.org/wiki/Cascading_Style_Sheets
+- https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories
+- https://css-tricks.com/
+- http://bennettfeely.com/gradients/
+- https://www.w3.org/TR/css3-selectors/#selectors
+
+== Boeken
+- http://learn.shayhowe.com/
+- http://shop.oreilly.com/product/0636920031123.do
+
+== Overige
+- http://www.slideshare.net/shawncalvert/html-csspresentation
+- http://www.keithclark.co.uk/labs/css-fps/nojs/
+- http://devdocs.io/
+- http://clrs.cc/
+- https://validator.w3.org/nu/#textarea

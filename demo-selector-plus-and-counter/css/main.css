@@ -1,0 +1,31 @@
+/** Styling **/
+* { box-sizing: border-box; }
+body { background-color: #282828; color: white; font-size: 50px; }
+main { text-align: center; }
+.block::before {
+	position: relative;
+	top: -.6em;
+	font-size: .5em;
+}
+
+/** Working counter() **/
+body {
+	counter-reset: block-nr;
+}
+
+.block::before {
+	content: counter(block-nr);
+	counter-increment: block-nr;
+}
+
+/** Better example of + combinator **/
+.block {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	border: white dashed .1em;
+}
+
+.block + .block {
+	border-left: none;
+}
